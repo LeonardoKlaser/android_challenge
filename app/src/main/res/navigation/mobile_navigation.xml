@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/title_MovieStore"
+    app:startDestination="@+id/navigation_myMovies">
+
+    <fragment
+        android:id="@+id/navigation_myMovies"
+        android:name="br.com.kunden.movies_catalog.ui.MyMovies.MyMoviesFragment"
+        android:label="@string/title_MyMovies"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_movieStore"
+        android:name="br.com.kunden.movies_catalog.ui.movieStore.MovieStoreFragment"
+        android:label="@string/title_MovieStore"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_insertMovie"
+        android:name="br.com.kunden.movies_catalog.ui.newMovie.NewMovieFragment"
+        android:label="@string/title_insertMovie"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
